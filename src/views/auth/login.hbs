@@ -1,0 +1,20 @@
+<div id="content" class="flex">
+  <div class="page-content page-container" id="page-content">
+    <div class="padding">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card">
+            <div class="card-header"><strong>Login to your account</strong></div>
+            <div class="card-body">
+              <form action="/auth/login" method="post">
+                <div class="form-group"><label class="text-muted" for="exampleInputEmail1">Email address</label><input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email"> <small id="emailHelp" class="form-text text-muted">We don't share email with anyone</small></div>
+                <div class="form-group"><label class="text-muted" for="exampleInputPassword1">Password</label><input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password"> <small id="passwordHelp" class="form-text text-muted">your password is saved in encrypted form</small></div>
+                <br><button type="submit" class="btn btn-primary">Submit</button> <small id="passwordHelp" class="form-text text-muted">Don't have an account? <a href="/auth/register">Register</a></small>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

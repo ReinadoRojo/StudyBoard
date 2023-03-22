@@ -1,0 +1,71 @@
+{{#unless classrooms}}
+<div class="row">
+  <div class="col-md-12">
+    <div class="alert alert-info">
+      <h4>No classrooms found</h4>
+    </div>
+  </div>
+</div>
+{{/unless}}
+
+<!-- Classrooms as teacher section -->
+<div class="row">
+  <div class="col-md-12">
+    <div class="alert alert-info">
+      <h4>Classrooms as teacher</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Teacher</th>
+          <th>Students</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each classrooms}}
+        <tr>
+          <td>{{name}}</td>
+          <td>{{teacher}}</td>
+          <td>{{students}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Classrooms as student (member) -->
+<div class="row">
+  <div class="col-md-12">
+    <div class="alert alert-info">
+      <h4>Classrooms as student (member)</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Teacher</th>
+          <th>Students</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each classrooms}}
+        <tr>
+          <td>{{name}}</td>
+          <td>{{teacher}}</td>
+          <td>{{students}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+</div>

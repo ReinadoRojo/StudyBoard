@@ -1,0 +1,40 @@
+<div id="content" class="flex">
+  <div class="page-content page-container" id="page-content">
+    <div class="padding">
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <div class="card">
+            <div class="card-header"><strong>Create an account</strong></div>
+            <div class="card-body">
+              <form action="/auth/register" method="post">
+                <div class="form-group">
+                  <label class="text-muted">Names</label>
+                  <input type="text" class="form-control" aria-describedby="nameHelp" placeholder="Your name" name="names">
+                  <small id="nameHelp" class="form-text text-muted">We need your names to show it to your teachers</small>
+                </div>
+                <div class="form-group">
+                  <label class="text-muted">Surnames</label>
+                  <input type="text" class="form-control" aria-describedby="surnamesHelp" placeholder="Your surnames" name="surnames">
+                  <small id="surnamesHelp" class="form-text text-muted">We need your surnames to show it to your teachers</small>
+                </div>
+                <div class="form-group">
+                  <label class="text-muted" for="exampleInputEmail1">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="email">
+                  <small id="emailHelp" class="form-text text-muted">We don't share email with anyone</small>
+                </div>
+                <div class="form-group">
+                  <label class="text-muted" for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" name="password">
+                  <small id="passwordHelp" class="form-text text-muted">Your password is saved with a military's encrypt system</small>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-primary">Register</button>
+                <small id="passwordHelp" class="form-text text-muted">Already have an account? <a href="/auth/login">Login</a></small>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
